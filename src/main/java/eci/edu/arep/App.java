@@ -7,10 +7,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
-import static spark.Spark.*;
+import static spark.Spark.get;
 
 public class App {
     public static void main(String[] args) {
@@ -47,7 +45,7 @@ public class App {
                 "\t\t<div class=\"wrap-contact2\">\n" +
                 "\t\t\t<form class=\"contact2-form validate-form\" onsubmit=\"event.preventDefault()\">\n" +
                 "\t\t\t\t\t<span class=\"contact2-form-title\">\n" +
-                "\t\t\t\t\t\tThis is a calculator that add two numbers\n" +
+                "\t\t\t\t\t\tThis is a calculator return the square of a number\n" +
                 "\t\t\t\t\t</span>\n" +
                 "\n" +
                 "\t\t\t\t<div class=\"wrap-input2 validate-input\" data-validate=\"Number 1 is Required\">\n" +
@@ -60,7 +58,7 @@ public class App {
                 "\t\t\t\t\t<div class=\"wrap-contact2-form-btn\">\n" +
                 "\t\t\t\t\t\t<div class=\"contact2-form-bgbtn\"></div>\n" +
                 "\t\t\t\t\t\t<button class=\"contact2-form-btn\" id=\"addBtn\" onclick=\"clicked()\">\n" +
-                "\t\t\t\t\t\t\tAdd numbers\n" +
+                "\t\t\t\t\t\t\tSquare of number\n" +
                 "\t\t\t\t\t\t</button>\n" +
                 "\t\t\t\t\t</div>\n" +
                 "\t\t\t\t</div>\n" +
